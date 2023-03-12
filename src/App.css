@@ -3,3 +3,10 @@
   /* padding: 2rem; */
   text-align: center;
 }
+
+/* Header/Navbar */
+.social-links {
+  width: 35px;
+  height: auto;
+  border-radius: 15px;
+}
