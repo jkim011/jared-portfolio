@@ -6,8 +6,9 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import Home from './pages/Home';
 import Portfolio from './pages/Portfolio';
-import Resume from './pages/Resume';
+import Skills from './pages/Skills';
 import Contact from './pages/Contact';
+import Footer from './components/Footer';
 
 function App() {
 
@@ -26,14 +27,15 @@ function App() {
               element={<Portfolio />}
             />
             <Route 
-              path='/resume'
-              element={<Resume />}
+              path='/skills'
+              element={<Skills />}
             />
             <Route 
               path='/contact'
               element={<Contact />}
             />
           </Routes>
+          {/* <Footer /> */}
         </>       
       </Router>
       
