@@ -5,8 +5,51 @@
 }
 
 /* Header/Navbar */
+.nav-margins {
+  margin-bottom: 30px;
+}
+
+/* Home */
+.intro {
+  margin-bottom: 40px;
+}
+
+.portfolioPic {
+  width: 250px;
+  height: auto;
+  border-radius: 50%;
+}
+
+.profile {
+  display: inline-flex;
+}
+
+.profile-links {
+  margin-top: 50px;
+  margin-left: 30px;
+  font-size: 110%;
+  text-align: left;
+  font-weight: bold;
+}
+
 .social-links {
   width: 35px;
   height: auto;
-  border-radius: 15px;
+  /* border-radius: 15px; */
+}
+
+.about-me {
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+
+.about-me-text {
+  text-align: left;
+}
+
+
+.textDecNone {
+  text-decoration: none;
 }
