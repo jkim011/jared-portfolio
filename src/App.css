@@ -49,6 +49,24 @@
   text-align: left;
 }
 
+/* Skills page */
+.skills-section {
+  display: inline-flex;
+}
+
+.frontend-skills,
+.backend-skills {
+  margin: 20px;
+  border: solid black 2px;
+  border-radius: 15px;
+  padding: 25px;
+}
+
+.skills-list {
+  text-align: left;
+  font-size: 115%;
+}
+
 
 .textDecNone {
   text-decoration: none;
