@@ -67,6 +67,60 @@
   font-size: 115%;
 }
 
+/* Portfolio */
+.portfolio-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.project-card {
+  height: 250px;
+  width: 500px;
+  margin-right: 2%;
+  margin-left: 2%;
+  margin-bottom: 4%;
+  border: solid black 5px;
+}
+
+.project-card-text {
+  color: black;
+  /* opacity: .5; */
+  transition: .5s ease;
+}
+
+.project-card-text:hover {
+  opacity: 1;
+  color: indigo;
+}
+
+.card:hover card-img {
+  opacity: .5;
+  transition: .5s ease;
+  border: solid white 5px;
+}
+
+.card-img-overlay {
+  opacity: 0;
+  background-color: rgba(248, 248, 255, 0.726);
+}
+
+.card-img-overlay:hover {
+  opacity: 1;
+  transition: .5s ease;
+}
+
+.githubLogo {
+  border-radius: 50%;
+}
+
+.githubLogo:hover {
+  background-color: purple;
+}
+
 
 .textDecNone {
   text-decoration: none;
