@@ -10,7 +10,7 @@ import emailLogo from '../assets/logo-images/emailLogo.png'
 
 function Header() {
   return (
-    <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" className="nav-margins">
+    <Navbar fixed="top" collapseOnSelect expand="lg" bg="dark" variant="dark" className="nav-margins">
       <Container>
         <Navbar.Brand href="#home">Jared Kim</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />

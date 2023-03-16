@@ -35,7 +35,7 @@ function App() {
               element={<Contact />}
             />
           </Routes>
-          {/* <Footer /> */}
+          <Footer />
         </>       
       </Router>
       

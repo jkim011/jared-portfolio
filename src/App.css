@@ -2,11 +2,16 @@
   /* margin: 0 auto; */
   /* padding: 2rem; */
   text-align: center;
+  margin-top: 90px;
 }
 
 /* Header/Navbar */
 .nav-margins {
   margin-bottom: 30px;
+}
+
+.textDecNone {
+  text-decoration: none;
 }
 
 /* Home */
@@ -36,6 +41,8 @@
   width: 35px;
   height: auto;
   /* border-radius: 15px; */
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
 .about-me {
@@ -75,6 +82,7 @@
   flex-direction: row;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 100px;
 }
 
 .project-card {
@@ -123,7 +131,110 @@
   background-color: purple;
 }
 
+/* Contact page */
+.contact-form {
+  margin-top: 40px;
+}
 
-.textDecNone {
-  text-decoration: none;
+.forms {
+  text-align: center;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+
+.textboxLabel {
+  display: inline-block;
+  font-size: 125%;
+  font-weight: bold;
+}
+
+.textbox {
+  width: 450px;
+  font-size: 16px;
+  padding: 3px;
+}
+
+.btnContainer {
+  text-align: center;
+}
+
+.submitBtn {
+  border: solid #e1deec 1px;
+  border-radius: 5px; 
+  transition-duration: 0.4s;
+}
+
+.submitBtn:hover {
+  background-color: indigo;
+  color: white;
+}
+
+.errorMessage {
+  color: white;
+  font-size: 110%;
+  font-weight: bold;
+  margin-top: -.5%;
+}
+
+.result {
+  font-size: 110%;
+  font-weight: bold;
+  text-align: center;
+}
+
+@media screen and (max-width: 1280px) {
+  .about-me {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  /* Homepage */
+  .profile {
+    display: inline-flex;
+  }
+
+  .about-me {
+    width: 70%;
+  }
+
+  /* Contact page */
+  .contact-form {
+    margin-top: 40px;
+  }
+
+  .textbox {
+    width: 425px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  /* Homepage */
+  .intro {
+    margin-bottom: 30px;
+  }
+
+  .profile {
+    display: inline-block;
+  }
+
+  .profile-links {
+    margin-top: 10px;
+    margin-left: auto;
+    text-align: center;
+  }
+
+  .about-me {
+    width: 75%;
+  }
+
+  /* Skills page */
+  .skills-section {
+    display: inline-block;
+  }
+
+  /* Contact page */
+  .textbox {
+    width: 375px;
+  }
 }

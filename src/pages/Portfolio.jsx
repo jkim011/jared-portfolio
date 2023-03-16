@@ -17,8 +17,9 @@ function Portfolio() {
         projectLink="https://git-fund.herokuapp.com/"
         projectGithub="https://github.com/RyStreet/git-fund"
         projectDescription="MERN Stack application. Crowdfunding and 
-          collaborating social app where users can post projects to 
-          recieve donations, and put them up for others to collaborate on."
+          collaboration social app where developers can support developers. 
+          Users can post projects to recieve donations and let others collaborate
+          on it, and do the same of other posted projects."
       />
       <SingleProject 
         imageSrc={textEditor}
