@@ -2,10 +2,6 @@ import React, { useState } from "react";
 import { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 
-import githubLogo from '../assets/logo-images/githubLogo.png';
-import linkedinLogo from '../assets/logo-images/linkedinLogo.png';
-import emailLogo from '../assets/logo-images/emailLogo.png'
-
 const Result = () => {
   return (
     <p>Message successfully sent! I will contact you back ASAP</p>
@@ -33,13 +29,8 @@ function Contact() {
   };
 
   return (
-    <div className='contactContainer'>
+    <div className='contact-container'>
       <h2 className='title'>Contact Me</h2>
-
-      <a href="https://github.com/jkim011/" target="_blank" rel="noreferrer"><img className="social-links" src={githubLogo} /></a>
-      <a href="https://www.linkedin.com/in/jared-kim/" target="_blank" rel="noreferrer"><img className="social-links" src={linkedinLogo} /></a>
-      <a href="mailto:jaredkim011@gmail.com"><img className="social-links" src={emailLogo} /></a>
-      
       <form ref={form} onSubmit={handleFormSubmit} className="contact-form">
         <div className='forms'>
           <label className='textboxLabel'>Name</label> <br/>

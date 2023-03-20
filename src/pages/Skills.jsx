@@ -1,8 +1,10 @@
 import React from "react";
 
+import resumePdf from '../assets/jareds-coding-resume.pdf'
+
 function Skills() {
   return (
-    <div>
+    <div className="my-skills-page">
       <h2>My Skills</h2> <br/>
       <div className="skills-section">
         <div className="frontend-skills">
@@ -26,7 +28,7 @@ function Skills() {
           </ul>
         </div>
       </div>
-      <a href="" className="textDecNone"><h5>Download my resume</h5></a>
+      <a href={resumePdf} download="jareds-coding-resume.pdf" className="textDecNone" style={{color:'black'}}><h5>Download my resume</h5></a>
     </div>
   )
 }

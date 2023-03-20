@@ -13,7 +13,8 @@ import Footer from './components/Footer';
 function App() {
 
   return (
-    <div className="App">
+    <div className="page-container">
+      <div className="content-wrap">
       <Router>
         <>
           <Header />
@@ -35,11 +36,10 @@ function App() {
               element={<Contact />}
             />
           </Routes>
-          <Footer />
         </>       
       </Router>
-      
-      
+      </div>
+      <Footer className="footer"/>
     </div>
   )
 }
