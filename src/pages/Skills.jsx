@@ -7,7 +7,7 @@ function Skills() {
     <div className="my-skills-page">
       <h2>My Skills</h2> <br/>
       <div className="skills-section">
-        <div className="frontend-skills">
+        <div className="frontend-skills box-shadow">
           <h3>Front End Skills</h3>
           <ul className="skills-list">
             <li>React</li>
@@ -17,18 +17,18 @@ function Skills() {
             <li>Bootstrap</li>
           </ul>
         </div>
-        <div className="backend-skills">
+        <div className="backend-skills box-shadow">
           <h3>Back End Skills</h3>
           <ul className="skills-list">
-            <li>NodeJs</li>
+            <li>Node</li>
             <li>Express</li>
             <li>MySql</li>
             <li>MongoDB</li>
-            <li>Insomnia</li>
+            <li>GraphQL</li>
           </ul>
         </div>
       </div>
-      <a href={resumePdf} download="jareds-coding-resume.pdf" className="textDecNone" style={{color:'black'}}><h5>Download my resume</h5></a>
+      <a href={resumePdf} download="jareds-coding-resume.pdf" className="textDecNone"><h5 className="resume-link box-shadow">Download my resume</h5></a>
     </div>
   )
 }

@@ -1,22 +1,21 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
-import githubLogo from '../assets/logo-images/githubLogo.png';
-import linkedinLogo from '../assets/logo-images/linkedinLogo.png';
-import emailLogo from '../assets/logo-images/emailLogo.png'
+import githubIcon from '../assets/logo-images/github-icon-red.png';
+import linkedinIcon from '../assets/logo-images/linkedin-icon-red.png';
+import emailIcon from '../assets/logo-images/email-icon-red.png';
 
 function Footer() {
   return (
     <div>
-    <hr></hr>
-    <div className="footer" >
-      <p>© 2023 Jared Kim</p>     
-      <div>
-        <a href="https://github.com/jkim011/" target="_blank" rel="noreferrer"><img className="social-links" src={githubLogo} /></a>
-        <a href="https://www.linkedin.com/in/jared-kim/" target="_blank" rel="noreferrer"><img className="social-links" src={linkedinLogo} /></a>
-        <a href="mailto:jaredkim011@gmail.com"><img className="social-links" src={emailLogo} /></a>
+      <hr className="divider"></hr>
+      <div className="footer" >
+        <p>© 2023 Jared Kim</p>     
+        <div>
+          <a href="https://github.com/jkim011/" target="_blank" rel="noreferrer"><img className="social-links" src={githubIcon} /></a>
+          <a href="https://www.linkedin.com/in/jared-kim/" target="_blank" rel="noreferrer"><img className="linkedin-link" src={linkedinIcon} /></a>
+          <a href="mailto:jaredkim011@gmail.com"><img className="social-links" src={emailIcon} /></a>
+        </div>
       </div>
-    </div>
     </div>
   )
 }

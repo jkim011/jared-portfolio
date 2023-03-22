@@ -1,9 +1,9 @@
 #root {
-  /* margin: 0 auto; */
-  /* padding: 2rem; */
   text-align: center;
-  /* margin-top: 90px; */
   min-height: 100vh;
+  background-color: #FCFFF7;
+  color: #89043D;
+  font-family:  Helvetica, Arial, sans-serif;
 }
 
 .page-container {
@@ -16,51 +16,74 @@
   flex: 1;
 }
 
-/* Header/Navbar */
-.nav-margins {
-  margin-bottom: 30px;
-}
-
 .textDecNone {
   text-decoration: none;
 }
 
-/* Home */
+.box-shadow {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.links {
+  color: #F45B69;
+  font-weight: bold;
+}
+.links:hover {
+  color: #89043D;
+  transition: .3s ease;
+}
+
+/*////////  Header/Navbar (styles for nav colors in main.scss)  ////////*/
+.nav-margins {
+  margin-bottom: 30px;
+}
+
+.nav-style {
+  border-bottom: solid 2px #89043D;
+}
+
+.nav-logo {
+  border-radius: 50%;
+  width: 35px;
+  height: auto;
+}
+
+/*////////  Homepage  ////////*/
 .intro {
-  margin-bottom: 50px;
+  margin-bottom: 100px;
   margin-top: 70px;
+  color: #F45B69;
+  font-size: 220%;
+}
+
+.intro-name {
+  font-weight: bolder;
+  background: linear-gradient(76.8deg, #89043D 3.6%, #F45B69 90.4%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .portfolioPic {
   width: 250px;
   height: auto;
   border-radius: 50%;
+  border: 2px solid #89043D;
 }
 
 .profile {
   display: inline-flex;
+  justify-content: center;
 }
 
-.profile-links {
-  margin-top: 70px;
+.about-me { 
+  margin-top: 20px;
   margin-left: 30px;
   font-size: 110%;
   text-align: left;
-  font-weight: bold;
+  width: 60%;
 }
 
-.about-me {
-  margin-top: 30px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 40%;
-}
-
-.about-me-text {
-  text-align: left;
-}
-
-/* Skills page */
+/*////////  Skills page  ////////*/
 .my-skills-page {
   margin-top: 70px;
 }
@@ -71,18 +94,42 @@
 
 .frontend-skills,
 .backend-skills {
+  width: 400px;
   margin: 20px;
-  border: solid black 2px;
+  border: solid #89043D 3px;
   border-radius: 15px;
-  padding: 25px;
+  padding: 30px;
+  background: linear-gradient(76.8deg, #89043D 3.6%, #F45B69 90.4%);
+  color: #FCFFF7;
 }
 
 .skills-list {
-  text-align: left;
+  text-align: center;
   font-size: 115%;
+  list-style-type: none;
+  margin-right: 20px;
 }
 
-/* Portfolio */
+.resume-link {
+  border: solid 2px #89043D;
+  border-radius: 15px;
+  padding: 3px;
+  width: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #F45B69;
+  color: #FCFFF7;
+}
+.resume-link:hover {
+  background-color: #89043D;
+  transition: .3s ease;
+}
+
+/*////////  Portfolio  ////////*/
+.project-background {
+  background: linear-gradient(76.8deg, #89043D 3.6%, #F45B69 90.4%);
+}
+
 .portfolio-container {
   display: flex;
   justify-content: center;
@@ -90,56 +137,20 @@
   flex-direction: row;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 100px;
-}
-
-.project-card {
-  height: 250px;
-  width: 500px;
-  margin-right: 2%;
-  margin-left: 2%;
-  margin-bottom: 4%;
-  border: solid black 5px;
+  margin-top: 80px;
 }
 
 .project-card-text {
-  color: black;
-  /* opacity: .5; */
-  transition: .5s ease;
+  color: #89043D;
 }
 
 .project-card-text:hover {
   opacity: 1;
-  color: indigo;
-}
-
-.card:hover card-img {
-  opacity: .5;
-  transition: .5s ease;
-  border: solid white 5px;
-}
-
-.card-img-overlay {
-  opacity: 0;
-  background-color: rgba(248, 248, 255, 0.726);
-}
-
-.card-img-overlay:hover {
-  opacity: 1;
+  color: #F45B69;
   transition: .5s ease;
 }
 
-.githubLogo {
-  border-radius: 50%;
-  width: 45px;
-  height: auto;
-}
-
-.githubLogo:hover {
-  background-color: purple;
-}
-
-/* Contact page */
+/*////////  Contact page  ////////*/
 .contact-container {
   margin-top: 70px;
 }
@@ -164,6 +175,8 @@
   width: 450px;
   font-size: 16px;
   padding: 3px;
+  background-color: #FCFFF7;
+  border: #F45B69 solid 2px;
 }
 
 .btnContainer {
@@ -171,14 +184,17 @@
 }
 
 .submitBtn {
-  border: solid #e1deec 1px;
-  border-radius: 5px; 
+  background-color: #F45B69;
+  color: #FCFFF7;
+  border: solid #89043D 2px;
+  padding: 6px;
+  border-radius: 10px; 
   transition-duration: 0.4s;
 }
 
 .submitBtn:hover {
-  background-color: indigo;
-  color: white;
+  background-color: #89043D;
+  color: #FCFFF7;
 }
 
 .errorMessage {
@@ -194,11 +210,10 @@
   text-align: center;
 }
 
-/* Footer */
+/*////////  Footer  ////////*/
 .footer {
   font-weight: bold;
   position: relative;
-  /* left: 0; */
   bottom: 0;
   width: 100%;
   display: inline-flex;
@@ -206,18 +221,40 @@
   justify-content: space-around;
 }
 
+.divider {
+  border-top: 2px #89043D solid;
+}
+
 .social-links {
   width: 30px;
   height: auto;
-  /* border-radius: 15px; */
   margin-left: 20px;
   margin-right: 20px;
+  margin-bottom: 12px;
+}
+.linkedin-link {
+  width: 36px;
+  height: auto;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 12px;
+}
+
+.social-links:hover,
+.linkedin-link:hover {
+  filter: invert(52%) sepia(65%) saturate(3823%) hue-rotate(324deg) brightness(105%) contrast(91%);
 }
 
 
 @media screen and (max-width: 1280px) {
   .about-me {
     width: 60%;
+    margin-top: 5px;
+  }
+
+  .portfolioPic {
+    width: 300px;
+    height: 300px;
   }
 }
 
@@ -225,10 +262,24 @@
   /* Homepage */
   .profile {
     display: inline-flex;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .portfolioPic {
+    width: 300px;
+    height: 300px;
   }
 
   .about-me {
-    width: 70%;
+    width: 50%;
+    margin-top: 5px;
+  }
+
+  /* Skills page */
+  .frontend-skills,
+  .backend-skills {
+    width: 350px;
   }
 
   /* Contact page */
@@ -247,23 +298,29 @@
     margin-bottom: 30px;
   }
 
+  .intro-name {
+    display: inline-block;
+    font-size: 125%;
+  }
+
   .profile {
     display: inline-block;
   }
 
-  .profile-links {
-    margin-top: 10px;
-    margin-left: auto;
-    text-align: center;
-  }
-
   .about-me {
-    width: 75%;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   /* Skills page */
   .skills-section {
     display: inline-block;
+  }
+
+  .frontend-skills,
+  .backend-skills {
+    width: 300px;
   }
 
   /* Contact page */
