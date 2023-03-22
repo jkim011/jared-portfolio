@@ -6,7 +6,7 @@ import textEditor from '../assets/project-images/text-editor.png';
 import noteTaker from '../assets/project-images/note-taker.png';
 import ecommerceBackend from '../assets/project-images/ecommerce-backend.png';
 import socialNetworkApi from '../assets/project-images/social-network-api.png';
-import teamProfileGenerator from '../assets/project-images/team-profile-generator.png';
+import techBlog from '../assets/project-images/techblog.png';
 
 function Portfolio() {
   return (
@@ -16,52 +16,58 @@ function Portfolio() {
         projectTitle="GitFund"
         projectLink="https://git-fund.herokuapp.com/"
         projectGithub="https://github.com/RyStreet/git-fund"
-        projectDescription="MERN Stack application. Crowdfunding and 
-          collaboration social app where developers can support developers. 
-          Users can post projects to recieve donations and let others collaborate
-          on it, and do the same of other posted projects."
+        projectDescription="Crowdfunding and collaboration social app where developers can support 
+          developers. Users can post projects to recieve donations and let others collaborate on it, 
+          and do the same of other posted projects."
+        projectLanguages="MERN Stack, Apollo, GraphQL, Semantic-UI, CSS, JWT, Node"
       />
       <SingleProject 
         imageSrc={textEditor}
         projectTitle="Text Editor"
         projectLink="https://jareds-text-editor.herokuapp.com/"
         projectGithub="https://github.com/jkim011/jareds-text-editor"
-        projectDescription="PWA. An installable text editor application 
-          with offline use capabilities. Uses IndexedDB for storage."
+        projectDescription="An installable text editor application with offline use capabilities. 
+          Always saves the user's text input."
+        projectLanguages="PWA, IndexedDB, JavaScript, CSS, HTML, Webpack, Express, Node"
+      />
+      <SingleProject 
+        imageSrc={techBlog}
+        projectTitle="Tech Blog"
+        projectLink="https://jareds-tech-blog.herokuapp.com/"
+        projectGithub="https://github.com/jkim011/tech-blog"
+        projectDescription="A blog site where developers can read and write about technical concepts, 
+          recent advancements, and new technologies. Users can create an account and sign in to comment 
+          on posts as well."
+        projectLanguages="JavaScript, Handlebars, CSS, MySQL, Express, Sequelize, Node"
       />
       <SingleProject 
         imageSrc={noteTaker}
         projectTitle="Note Taker"
         projectLink="https://jareds-note-taker.herokuapp.com/"
         projectGithub="https://github.com/jkim011/jareds-note-taker"
-        projectDescription="Express.js. A note taking application 
-          where users can write, save, and delete notes."
-      />
-      <SingleProject 
-        imageSrc={ecommerceBackend}
-        projectTitle="E-Commerce Backend"
-        projectLink="https://github.com/jkim011/jareds-ORM-challenge#installation"
-        projectGithub="https://github.com/jkim011/jareds-ORM-challenge"
-        projectDescription="Express, Sequelize, ORM. This repository contains the 
-          back-end of an e-commerce site. No front end has been created yet."
+        projectDescription="A note taking application where users can write, save, and delete notes."
+        projectLanguages="Express, JavaScript, CSS, HTML, Node"
       />
       <SingleProject 
         imageSrc={socialNetworkApi}
         projectTitle="Social Network API"
         projectLink="https://github.com/jkim011/jareds-social-network-api#installation"
         projectGithub="https://github.com/jkim011/jareds-social-network-api"
-        projectDescription="Built with MongoDB. This repository is the API and back-end 
-          functionality for a social network application. No front end has been created yet."
+        projectDescription="The API for a social network application where users can share thoughts, 
+          add friends, and react to friends' thoughts. There is no front end so routes are tested
+          with a tool like Insomnia."
+        projectLanguages="JavaScript, Express, Mongoose, MongoDB, Node, Moment.js"
       />
       <SingleProject 
-        imageSrc={teamProfileGenerator}
-        projectTitle="Team Profile Generator"
-        projectLink="https://github.com/jkim011/jareds-team-profile-generator#installation"
-        projectGithub="https://github.com/jkim011/jareds-team-profile-generator"
-        projectDescription="Node.js. Generates a team profile with the names 
-          of employees, their roles, and contact info. The app is ran in the terminal and then 
-          creates an index.html file with the newly generated team profile."
-      />
+        imageSrc={ecommerceBackend}
+        projectTitle="E-Commerce Backend"
+        projectLink="https://github.com/jkim011/jareds-ORM-challenge#installation"
+        projectGithub="https://github.com/jkim011/jareds-ORM-challenge"
+        projectDescription="The back-end for an e-commerce site where users can add, search, update, and
+          delete products for their online store. There is no front end so routes are tested with a tool 
+          like Insomnia."
+        projectLanguages="JavaScript, Express, Sequelize, MySQL, Node"
+      />      
     </div>
   )
 };
