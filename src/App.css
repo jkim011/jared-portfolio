@@ -78,7 +78,7 @@
 .about-me { 
   margin-top: 20px;
   margin-left: 30px;
-  font-size: 110%;
+  font-size: 105%;
   text-align: left;
   width: 60%;
 }
@@ -101,6 +101,8 @@
   padding: 30px;
   background: linear-gradient(76.8deg, #89043D 3.6%, #F45B69 90.4%);
   color: #FCFFF7;
+  /* background-color: #FCFFF7;
+  color: #89043D; */
 }
 
 .skills-list {
@@ -300,7 +302,7 @@
 
   .intro-name {
     display: inline-block;
-    font-size: 125%;
+    font-size: 130%;
   }
 
   .profile {
