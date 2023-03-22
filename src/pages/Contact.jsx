@@ -10,13 +10,27 @@ const Result = () => {
 
 function Contact() {
   const [result, showResult] = useState(false);
+  const [errorMessage, showErrorMessage] = useState('');
 
   const form = useRef();
 
   const handleFormSubmit = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm("gmail_service", "template_xby6m0n", form.current, "tYk5_UArLITlqQJKE")
+    if(!document.getElementById("name").value) {
+      showErrorMessage("Please enter your name")
+      return;
+    }
+    if(!document.getElementById("email").value) {
+      showErrorMessage("Please enter your email")
+      return; 
+    }
+    if(!document.getElementById("message").value) {
+      showErrorMessage("Please include a message")
+      return; 
+    }
+
+    emailjs.sendForm(import.meta.env.VITE_SERVICE_ID, import.meta.env.VITE_TEMPLATE_ID, form.current, import.meta.env.VITE_PUBLIC_KEY)
       .then((result) => {
           console.log(result.text);
           
@@ -25,6 +39,7 @@ function Contact() {
       }
     );
     e.target.reset();
+    showErrorMessage("");
     showResult(true);
   };
 
@@ -50,6 +65,7 @@ function Contact() {
       </form>
 
       <div className='result'>{result ? <Result /> : null}</div>
+      <div className="result">{errorMessage}</div>
 
     </div>
   );
