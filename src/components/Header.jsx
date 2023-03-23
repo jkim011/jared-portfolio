@@ -11,7 +11,7 @@ function Header() {
   return (
     <Navbar collapseOnSelect expand="lg" bg="" variant="" className="nav-margins nav-style">
       <Container>
-        <div><Navbar.Brand as={Link} to="/"><img src={jkLogo} className="nav-logo "/></Navbar.Brand></div>
+        <div><Navbar.Brand as={Link} to="jared-portfolio/"><img src={jkLogo} className="nav-logo "/></Navbar.Brand></div>
         <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto "></Nav>
