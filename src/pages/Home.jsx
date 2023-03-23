@@ -29,8 +29,8 @@ function Home() {
             I got into web development because it was a great way for me to express my creativity and exercise my problem solving abilities.
             Building new web applications that can solve real world problems, or help other creative minds showcase their own work and talents brings me a 
             great sense of accomplishment. 
-            Here you can check out some of <Link to="jared-portfolio/portfolio" className="textDecNone links">my projects. </Link>
-            Thanks for checking out my page! If you like my work, <Link to='jared-portfolio/contact' className="textDecNone links">lets chat!</Link>               
+            Here you can check out some of <Link to="/portfolio" className="textDecNone links">my projects. </Link>
+            Thanks for checking out my page! If you like my work, <Link to='/contact' className="textDecNone links">lets chat!</Link>               
           </p>
         </div>
       </div>

@@ -11,15 +11,15 @@ function Header() {
   return (
     <Navbar collapseOnSelect expand="lg" bg="" variant="" className="nav-margins nav-style">
       <Container>
-        <div><Navbar.Brand as={Link} to="jared-portfolio/"><img src={jkLogo} className="nav-logo "/></Navbar.Brand></div>
+        <div><Navbar.Brand as={Link} to="/"><img src={jkLogo} className="nav-logo "/></Navbar.Brand></div>
         <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto "></Nav>
           <Nav >
-            <Nav.Link as={Link} to='jared-portfolio/'>Home</Nav.Link>
-            <Nav.Link as={Link} to='jared-portfolio/skills'>Skills</Nav.Link>
-            <Nav.Link as={Link} to='jared-portfolio/portfolio'>Portfolio</Nav.Link>           
-            <Nav.Link as={Link} to='jared-portfolio/contact'>Contact</Nav.Link>
+            <Nav.Link as={Link} to='/'>Home</Nav.Link>
+            <Nav.Link as={Link} to='/skills'>Skills</Nav.Link>
+            <Nav.Link as={Link} to='/portfolio'>Portfolio</Nav.Link>           
+            <Nav.Link as={Link} to='/contact'>Contact</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
