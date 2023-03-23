@@ -3,7 +3,7 @@ import React from 'react';
 import './App.css';
 import './main.scss'
 // import 'bootstrap/dist/css/bootstrap.min.css';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 
 import Header from './components/Header';
 import Home from './pages/Home';
@@ -17,7 +17,7 @@ function App() {
   return (
     <div className="page-container">
       <div className="content-wrap">
-      <Router>
+      <HashRouter basename='/'>
         <>
           <Header />
           <Routes>
@@ -43,7 +43,7 @@ function App() {
             />
           </Routes>
         </>       
-      </Router>
+      </HashRouter>
       </div>
       <Footer className="footer"/>
     </div>
