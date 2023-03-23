@@ -23,22 +23,22 @@ function App() {
           <Routes>
             <Route 
               exact
-              path='/'
+              path='jared-portfolio/'
               element={<Home />}
             />
             <Route 
               exact
-              path='/portfolio'
+              path='jared-portfolio/portfolio'
               element={<Portfolio />}
             />
             <Route 
               exact
-              path='/skills'
+              path='jared-portfolio/skills'
               element={<Skills />}
             />
             <Route 
               exact
-              path='/contact'
+              path='jared-portfolio/contact'
               element={<Contact />}
             />
           </Routes>
