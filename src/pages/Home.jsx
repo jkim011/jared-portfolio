@@ -19,18 +19,15 @@ function Home() {
         </div>
         <div className="about-me">
           <p>
-            Hi everyone, I'm Jared, a full stack web developer based in Lago Vista, Texas. 
-            Prior to web development, I was a martial arts instructor for almost 4 years. I carry many of those skills I learned from being a martial arts instructor
-            into my new career as a developer such as: strong attention to detail, organization, time efficiency, and teamwork.
-            You can also see a list of all my technical skills in my <a href={resumePdf} download="jareds-coding-resume.pdf" className="textDecNone links">resume. </a> 
-            Training martial arts is still one of my hobbies since it keeps me disciplined and focused. To wind down I enjoy playing video games
+            Based in Lago Vista, Texas. I'm a web developer who exercises my creativity and problem solving abilities to
+            build new web applications, debug and improve existing apps, and build sites for other creative minds to showcase their talents or art.
+            Here are some of <Link to="/portfolio" className="textDecNone links">my projects. </Link>
+            As a former martial arts instructor, I gained a handful of soft skills 
+            such as: attention to detail, organization, time efficiency, and teamwork.
+            My technical skills are listed in my <a href={resumePdf} download="jareds-coding-resume.pdf" className="textDecNone links">resume. </a> 
+            Training in martial arts is still a hobby of mine since it keeps me disciplined and focused. To wind down I enjoy playing video games
             and listening to music, mainly hip-hop and rock. 
-            <br/> <br/>
-            I got into web development because it was a great way for me to express my creativity and exercise my problem solving abilities.
-            Building new web applications that can solve real world problems, or help other creative minds showcase their own work and talents brings me a 
-            great sense of accomplishment. 
-            Here you can check out some of <Link to="/portfolio" className="textDecNone links">my projects. </Link>
-            Thanks for checking out my page! If you like my work, <Link to='/contact' className="textDecNone links">lets chat!</Link>               
+            Thanks for checking out my page! <Link to='/contact' className="textDecNone links">Lets chat!</Link>               
           </p>
         </div>
       </div>

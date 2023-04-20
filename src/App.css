@@ -42,10 +42,18 @@
   border-bottom: solid 2px #89043D;
 }
 
+.nav-brand {
+  margin-left: 8%;
+}
+
 .nav-logo {
   border-radius: 50%;
   width: 35px;
   height: auto;
+}
+
+.nav-items {
+  margin-right: 8%;
 }
 
 /*////////  Homepage  ////////*/
@@ -76,7 +84,7 @@
 }
 
 .about-me { 
-  margin-top: 20px;
+  margin-top: 50px;
   margin-left: 30px;
   font-size: 105%;
   text-align: left;
@@ -278,6 +286,15 @@
     margin-top: 5px;
   }
 
+  /* Navbar */
+  .nav-brand {
+    margin-left: 3%;
+  }
+
+  .nav-items {
+    margin-right: 3%;
+  }
+
   /* Skills page */
   .frontend-skills,
   .backend-skills {
@@ -295,9 +312,19 @@
 }
 
 @media screen and (max-width: 550px) {
+  /* Navbar */
+  .nav-brand {
+    margin-left: 4%;
+  }
+  
+  .nav-items {
+    margin-right: 4%;
+  }
+
   /* Homepage */
   .intro {
-    margin-bottom: 30px;
+    margin-top: 30px;
+    margin-bottom: 25px;
   }
 
   .intro-name {
@@ -315,7 +342,17 @@
     margin-right: auto;
   }
 
+  .portfolioPic {
+    width: 212px;
+    height: auto;
+    margin-bottom: 10px;
+  }
+
   /* Skills page */
+  .my-skills-page {
+    margin-top: 40px;
+  }
+  
   .skills-section {
     display: inline-block;
   }
@@ -325,7 +362,16 @@
     width: 300px;
   }
 
+  /* Portfolio page */
+  .portfolio-container {
+    margin-top: 55px;
+  }
+
   /* Contact page */
+  .contact-container {
+    margin-top: 50px;
+  }
+
   .textbox {
     width: 375px;
   }
