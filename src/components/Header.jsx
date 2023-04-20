@@ -10,19 +10,19 @@ function Header() {
 
   return (
     <Navbar collapseOnSelect expand="lg" bg="" variant="" className="nav-margins nav-style">
-      <Container>
-        <div><Navbar.Brand as={Link} to="/"><img src={jkLogo} className="nav-logo "/></Navbar.Brand></div>
-        <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
+      {/* <Container> */}
+        <Navbar.Brand className="nav-brand" as={Link} to="/"><img src={jkLogo} className="nav-logo "/></Navbar.Brand>
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" className="nav-items"/>
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto "></Nav>
-          <Nav >
+          <Nav className="nav-items">
             <Nav.Link as={Link} to='/'>Home</Nav.Link>
             <Nav.Link as={Link} to='/skills'>Skills</Nav.Link>
             <Nav.Link as={Link} to='/portfolio'>Portfolio</Nav.Link>           
             <Nav.Link as={Link} to='/contact'>Contact</Nav.Link>
           </Nav>
         </Navbar.Collapse>
-      </Container>
+      {/* </Container> */}
     </Navbar>
   );
 };
