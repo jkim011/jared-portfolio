@@ -24,7 +24,7 @@ function Home() {
             Here are some of <Link to="/portfolio" className="textDecNone links">my projects. </Link>
             As a former martial arts instructor, I gained a handful of soft skills 
             such as: attention to detail, organization, time efficiency, and teamwork.
-            My technical skills are listed in my <a href={resumePdf} download="jareds-coding-resume.pdf" className="textDecNone links">resume. </a> 
+            My <Link to="/skills" className="textDecNone links">technical skills</Link> are listed in my <a href={resumePdf} download="jareds-coding-resume.pdf" className="textDecNone links">resume. </a> 
             Training in martial arts is still a hobby of mine since it keeps me disciplined and focused. To wind down I enjoy playing video games
             and listening to music, mainly hip-hop and rock. 
             Thanks for checking out my page! <Link to='/contact' className="textDecNone links">Lets chat!</Link>               
