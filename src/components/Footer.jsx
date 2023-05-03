@@ -12,7 +12,7 @@ function Footer() {
         <p>© 2023 Jared Kim</p>     
         <div>
           <a href="https://github.com/jkim011/" target="_blank" rel="noreferrer"><img className="social-links" src={githubIcon} /></a>
-          <a href="https://www.linkedin.com/in/jared-kim/" target="_blank" rel="noreferrer"><img className="linkedin-link" src={linkedinIcon} /></a>
+          <a href="https://www.linkedin.com/in/jaredkim011/" target="_blank" rel="noreferrer"><img className="linkedin-link" src={linkedinIcon} /></a>
           <a href="mailto:jaredkim011@gmail.com"><img className="social-links" src={emailIcon} /></a>
         </div>
       </div>
