@@ -7,7 +7,7 @@ import emailIcon from '../assets/logo-images/email-icon-red.png';
 function Footer() {
   return (
     <div>
-      <hr className="divider"></hr>
+      {/* <hr className="divider"></hr> */}
       <div className="footer" >
         <p>© 2023 Jared Kim</p>     
         <div>

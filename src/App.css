@@ -24,6 +24,21 @@
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+.btns {
+  border: #89043D solid 2px;
+  background-color: #89043D;
+  color: #FCFFF7;
+  padding: 3px;
+  padding-left: 5px;
+  padding-right: 5px;
+  transition: 0.3s ease;
+}
+.btns:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: #FCFFF7;
+  color: #89043D;
+}
+
 .links {
   color: #F45B69;
   font-weight: bold;
@@ -33,13 +48,18 @@
   transition: .3s ease;
 }
 
+li {
+  list-style-type: square;
+}
+
 /*////////  Header/Navbar (styles for nav colors in main.scss)  ////////*/
 .nav-margins {
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
+  margin-top: 10px;
 }
 
 .nav-style {
-  border-bottom: solid 2px #89043D;
+  /* border-bottom: solid 2px #89043D; */
 }
 
 .nav-brand {
@@ -54,88 +74,179 @@
 
 .nav-items {
   margin-right: 8%;
+  font-size: 18px;
+}
+
+.nav-item-link {
+  margin-left: 15px;
 }
 
 /*////////  Homepage  ////////*/
+.intro-container {
+  height: 85%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  align-items: center;
+  justify-content: center;  
+}
+
 .intro {
-  margin-bottom: 100px;
-  margin-top: 70px;
+  /* position: absolute; */
+  text-align: center;
   color: #F45B69;
-  font-size: 220%;
+  margin-bottom: 20px;
 }
 
 .intro-name {
+  font-size: 500%;
   font-weight: bolder;
   background: linear-gradient(76.8deg, #89043D 3.6%, #F45B69 90.4%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
+.intro-title {
+  font-size: 350%;
+}
+
+.intro-points {
+  display: inline-flex;
+}
+
+.intro-points-bullets {
+  margin-left: 20px;
+  margin-right: 20px;
+  text-align: left;
+  font-size: 18px;
+}
+
+.home-btns-container {
+  margin-top: 20px;
+}
+
+.home-btns {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+/*/////////  About  /////////*/
+.about-title {
+  text-decoration: underline;
+  text-underline-position: below;
+}
+
+.about-container {
+  margin-top: 60px;
+}
+
 .portfolioPic {
   width: 250px;
   height: auto;
-  border-radius: 50%;
+  /* border-radius: 50%; */
   border: 2px solid #89043D;
+  position: absolute;
+  top: -25px;
+  left: -35px;
+  z-index: 10;
+}
+
+.portfolioPicBorder {
+  height: 200px;
+  width: 200px;
+  position: relative;
+  /* background-color: red; */
+  border: blue solid 2px;
+  margin: 20px;
+  /* margin-left: auto;
+  margin-right: auto; */
+  margin-right: 80px;
+}
+
+.portfolioPicBorder2 {
+  height: 250px;
+  width: 250px;
+  position: absolute;
+  /* background-color: red; */
+  border: #F45B69 solid 2px;
+  /* margin-top: 20px; */
+  top: 55px;
+  left: 65px;
 }
 
 .profile {
   display: inline-flex;
+  align-items: center;
   justify-content: center;
 }
 
 .about-me { 
-  margin-top: 50px;
-  margin-left: 30px;
+  margin-top: 80px;
+  /* margin-left: auto;
+  margin-right: auto; */
+  margin-left: 80px;
   font-size: 105%;
   text-align: left;
   width: 60%;
 }
 
-/*////////  Skills page  ////////*/
-.my-skills-page {
-  margin-top: 70px;
+.my-skills-title {
+  margin-top: 100px;
+  text-decoration: underline;
+  text-underline-position: below;
 }
 
 .skills-section {
-  display: inline-flex;
-}
-
-.frontend-skills,
-.backend-skills {
-  width: 400px;
-  margin: 20px;
-  border: solid #89043D 3px;
-  border-radius: 15px;
-  padding: 30px;
-  background: linear-gradient(76.8deg, #89043D 3.6%, #F45B69 90.4%);
-  color: #FCFFF7;
-  /* background-color: #FCFFF7;
-  color: #89043D; */
-}
-
-.skills-list {
-  text-align: center;
-  font-size: 115%;
-  list-style-type: none;
-  margin-right: 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  width: 480px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
 }
 
 .resume-link {
-  border: solid 2px #89043D;
-  border-radius: 15px;
-  padding: 3px;
-  width: 150px;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: #F45B69;
-  color: #FCFFF7;
+  color: #F45B69;
 }
 .resume-link:hover {
-  background-color: #89043D;
+  color: #89043D;
   transition: .3s ease;
 }
 
+/* Single project component */
+.card-project-text {
+  margin-top: 40px;
+  opacity: 0;
+  transition: .3s ease;
+}
+.card-project-text:hover {
+  background-color: #FCFFF7;
+  opacity: 1;
+}
+
+.card-btns-container {
+  display: flex;
+  position: absolute;
+  bottom: 15%;
+  left: 29%;
+  right: auto;
+}
+
+.card-btns {
+  width: 90px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
 /*////////  Portfolio  ////////*/
+.portfolio-title {
+  margin-top: 60px;
+  text-decoration: underline;
+  text-underline-position: below;
+}
+
 .project-background {
   background: linear-gradient(76.8deg, #89043D 3.6%, #F45B69 90.4%);
 }
@@ -147,10 +258,10 @@
   flex-direction: row;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 80px;
+  margin-top: 30px;
 }
 
-.project-card-text {
+/* .project-card-text {
   color: #89043D;
 }
 
@@ -158,11 +269,16 @@
   opacity: 1;
   color: #F45B69;
   transition: .5s ease;
-}
+} */
 
 /*////////  Contact page  ////////*/
 .contact-container {
-  margin-top: 70px;
+  margin-top: 60px;
+}
+
+.contact-title {
+  text-decoration: underline;
+  text-underline-position: below;
 }
 
 .contact-form {
@@ -231,9 +347,9 @@
   justify-content: space-around;
 }
 
-.divider {
+/* .divider {
   border-top: 2px #89043D solid;
-}
+} */
 
 .social-links {
   width: 30px;
@@ -257,35 +373,62 @@
 
 
 @media screen and (max-width: 1280px) {
-  .about-me {
-    width: 60%;
-    margin-top: 5px;
+  /* Homepage */
+  .intro-container {
+    height: 78%;
+    width: 100%; 
   }
 
-  .portfolioPic {
-    width: 300px;
-    height: 300px;
+  .intro {
+    margin-top: 10px;
+    margin-bottom: 18px;
+  }
+
+  .intro-name {
+    display: inline-block;
+    font-size: 350%;
+  }
+  
+  .intro-title {
+    font-size: 220%;
+  }
+
+  .intro-points-bullets {
+    margin-left: 8px;
+    margin-right: 8px;
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+
+  /* About */
+  .about-container {
+    margin-top: 40px;
+  }
+
+  .about-me {
+    width: 45%;
+    margin-top: 40px;
+  }
+
+  .portfolioPicBorder {
+    height: 200px;
+    width: 200px;
+    position: relative;
+
+    margin-right: 80px;
+    margin-top: -55px;
+  }
+
+  .my-skills-title {
+    margin-top: 60px;
+  }
+
+  .skills-section {
+    margin-bottom: 10px;
   }
 }
 
 @media screen and (max-width: 992px) {
-  /* Homepage */
-  .profile {
-    display: inline-flex;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .portfolioPic {
-    width: 300px;
-    height: 300px;
-  }
-
-  .about-me {
-    width: 50%;
-    margin-top: 5px;
-  }
-
   /* Navbar */
   .nav-brand {
     margin-left: 3%;
@@ -295,10 +438,100 @@
     margin-right: 3%;
   }
 
-  /* Skills page */
-  .frontend-skills,
-  .backend-skills {
-    width: 350px;
+  /* Homepage */
+  .intro-container {
+    height: 80%;
+    width: 100%; 
+  }
+
+  .intro {
+    margin-top: 10px;
+    margin-bottom: 25px;
+  }
+
+  .intro-name {
+    display: inline-block;
+    font-size: 350%;
+  }
+  
+  .intro-title {
+    font-size: 200%;
+  }
+  
+  .intro-points {
+    display: inline-flex;
+
+  }
+  
+  .intro-points-bullets {
+    margin-left: 8px;
+    margin-right: 8px;
+    font-size: 15px;
+  }
+
+  .home-btns-container {
+    margin-top: 30px;
+  }
+
+  /* About */
+  .about-container {
+    margin-top: 40px;
+  }
+
+  .profile {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .portfolioPic {
+    width: 250px;
+    height: auto;
+    border: 2px solid #89043D;
+    position: absolute;
+    top: -25px;
+    left: -35px;
+    z-index: 10;
+  }
+  
+  .portfolioPicBorder {
+    height: 200px;
+    width: 200px;
+    position: relative;
+
+    margin-right: 80px;
+    margin-top: -65px;
+  }
+  
+  .portfolioPicBorder2 {
+    height: 250px;
+    width: 250px;
+    position: absolute;
+    border: #F45B69 solid 2px;
+    top: 55px;
+    left: 65px;
+  }
+  
+  .about-me { 
+    margin-top: 20px;
+    margin-left: 65px;
+    margin-right: 5px;
+    font-size: 100%;
+    text-align: left;
+    width: 50%;
+  }
+  
+  .my-skills-title {
+    margin-top: 50px;
+  }
+  
+  .skills-section {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
   }
 
   /* Contact page */
@@ -322,57 +555,134 @@
   }
 
   /* Homepage */
+  .intro-container {
+    height: 80%;
+    width: 100%; 
+  }
+
   .intro {
-    margin-top: 30px;
+    /* margin-top: 30px; */
     margin-bottom: 25px;
   }
 
   .intro-name {
     display: inline-block;
-    font-size: 130%;
+    font-size: 300%;
   }
-
-  .profile {
+  
+  .intro-title {
+    font-size: 160%;
+  }
+  
+  .intro-points {
     display: inline-block;
+
+  }
+  
+  .intro-points-bullets {
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 15px;
   }
 
-  .about-me {
-    width: 85%;
-    margin-left: auto;
-    margin-right: auto;
+  .home-btns-container {
+    margin-top: 30px;
+  }
+
+  /* About */
+  .about-container {
+    margin-top: 30px;
+  }
+  
+  .profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 
   .portfolioPic {
     width: 212px;
     height: auto;
-    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
-  /* Skills page */
-  .my-skills-page {
-    margin-top: 40px;
+  .portfolioPicBorder {
+    height: 200px;
+    width: 200px;
+    position: relative;
+    /* background-color: red; */
+    border: blue solid 2px;
+    margin: 20px;
+    /* margin-left: auto;
+    margin-right: auto; */
+    margin-right: 80px;
+  }
+  
+  .portfolioPicBorder2 {
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    /* background-color: red; */
+    border: #F45B69 solid 2px;
+    /* margin-top: 20px; */
+    top: 55px;
+    left: 65px;
+  }
+  
+  
+  .about-me {
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+    font-size: 100%;
+  }
+
+  .my-skills-title {
+    margin-top: 20px;
   }
   
   .skills-section {
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 25px;
+  }
+  
+  .resume-link {
+    color: #F45B69;
+    text-align: center;
   }
 
-  .frontend-skills,
-  .backend-skills {
-    width: 300px;
+  /* Single project component */
+  .card-btns-container {
+    bottom: 25%;
+    left: 22%;
+    right: auto;
   }
 
   /* Portfolio page */
+  .portfolio-title {
+    margin-top: 30px;
+  }
+
   .portfolio-container {
-    margin-top: 55px;
+    margin-top: 30px;
   }
 
   /* Contact page */
   .contact-container {
-    margin-top: 50px;
+    margin-top: 30px;
+    margin-bottom: 10px;
   }
 
   .textbox {
-    width: 375px;
+    width: 350px;
   }
 }
