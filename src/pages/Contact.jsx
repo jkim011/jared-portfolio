@@ -45,7 +45,7 @@ function Contact() {
 
   return (
     <div className='contact-container'>
-      <h2 className='title'>Contact Me</h2>
+      <h1 className='contact-title'>Contact Me</h1>
       <form ref={form} onSubmit={handleFormSubmit} className="contact-form">
         <div className='forms'>
           <label className='textboxLabel'>Name</label> <br/>
@@ -60,7 +60,7 @@ function Contact() {
           <textarea id='message' className='textbox' rows={12} name="user_message" />
         </div>
         <div className='btnContainer'>
-          <input className='submitBtn' type="submit" value="Submit" data-bs-toggle="modal" data-bs-target="#exampleModal"/>
+          <input className='btns' type="submit" value="Submit" data-bs-toggle="modal" data-bs-target="#exampleModal"/>
         </div>  
       </form>
 

@@ -5,10 +5,11 @@ import './main.scss'
 // import 'bootstrap/dist/css/bootstrap.min.css';
 import { HashRouter, Routes, Route } from 'react-router-dom';
 
+import ParticleBackground from './components/ParticleBackground';
 import Header from './components/Header';
 import Home from './pages/Home';
+import About from './pages/About';
 import Portfolio from './pages/Portfolio';
-import Skills from './pages/Skills';
 import Contact from './pages/Contact';
 import Footer from './components/Footer';
 
@@ -19,7 +20,8 @@ function App() {
       <div className="content-wrap">
       <HashRouter basename='/'>
         <>
-          <Header />
+        {/* <ParticleBackground /> */}
+          <Header />     
           <Routes>
             <Route 
               exact
@@ -28,13 +30,13 @@ function App() {
             />
             <Route 
               exact
-              path='/portfolio'
-              element={<Portfolio />}
+              path='/about'
+              element={<About />}
             />
             <Route 
               exact
-              path='/skills'
-              element={<Skills />}
+              path='/portfolio'
+              element={<Portfolio />}
             />
             <Route 
               exact
