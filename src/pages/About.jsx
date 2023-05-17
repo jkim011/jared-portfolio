@@ -1,11 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import PageAnimation from "../components/PageAnimation";
 
 import portfolioPic from '../assets/portfolioPic.jpg'
 import resumePdf from '../assets/jareds-coding-resume.pdf'
 
 function About() {
   return (
+    <PageAnimation>
     <div className="about-container">
       <h1 className="about-title">About</h1>
 
@@ -35,6 +37,7 @@ function About() {
       </div>
       
     </div>
+    </PageAnimation>
   )
 }
 

@@ -4,6 +4,7 @@ import './App.css';
 import './main.scss'
 // import 'bootstrap/dist/css/bootstrap.min.css';
 import { HashRouter, Routes, Route } from 'react-router-dom';
+import { AnimatePresence } from "framer-motion";
 
 import ParticleBackground from './components/ParticleBackground';
 import Header from './components/Header';
@@ -21,6 +22,7 @@ function App() {
       <HashRouter basename='/'>
         <>
         {/* <ParticleBackground /> */}
+        <AnimatePresence >
           <Header />     
           <Routes>
             <Route 
@@ -44,6 +46,7 @@ function App() {
               element={<Contact />}
             />
           </Routes>
+          </AnimatePresence>
         </>       
       </HashRouter>
       </div>
