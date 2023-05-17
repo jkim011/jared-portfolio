@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useRef } from 'react';
 import emailjs from '@emailjs/browser';
+import PageAnimation from "../components/PageAnimation";
 
 const Result = () => {
   return (
@@ -44,6 +45,7 @@ function Contact() {
   };
 
   return (
+    <PageAnimation>
     <div className='contact-container'>
       <h1 className='contact-title'>Contact Me</h1>
       <form ref={form} onSubmit={handleFormSubmit} className="contact-form">
@@ -68,6 +70,7 @@ function Contact() {
       <div className="result">{errorMessage}</div>
 
     </div>
+    </PageAnimation>
   );
 }
 

@@ -1,5 +1,6 @@
 import React from "react";
 import SingleProject from "../components/SingleProject";
+import PageAnimation from "../components/PageAnimation";
 
 import gitfund from '../assets/project-images/gitfund.png';
 import textEditor from '../assets/project-images/text-editor.png';
@@ -10,7 +11,7 @@ import techBlog from '../assets/project-images/techblog.png';
 
 function Portfolio() {
   return (
-    <div>
+    <PageAnimation>
       <h1 className="portfolio-title">Portfolio</h1>
       <div className="portfolio-container">
         <SingleProject 
@@ -71,7 +72,7 @@ function Portfolio() {
           projectLanguages="JavaScript, Express, Sequelize, MySQL, Node"
         />      
       </div>
-    </div>
+    </PageAnimation>
   )
 };
 

@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import PageAnimation from "../components/PageAnimation";
 
 import resumePdf from '../assets/jareds-coding-resume.pdf'
 import ParticleBackground from "../components/ParticleBackground";
@@ -8,6 +9,7 @@ function Home() {
   return (
     <div>
       <ParticleBackground />
+      {/* <PageAnimation> */}
       <div className="intro-container">        
         <div className="intro">
           <h2 className="intro-name">Jared Kim</h2>
@@ -34,6 +36,7 @@ function Home() {
           </a>
         </div>
       </div>
+      {/* </PageAnimation> */}
     </div>
   )
 }
