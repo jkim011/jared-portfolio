@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import PageAnimation from "../components/PageAnimation";
 
-import resumePdf from '../assets/jareds-coding-resume.pdf'
+import resumePdf from '../assets/jareds_fullstack_resume.pdf'
 import ParticleBackground from "../components/ParticleBackground";
 
 function Home() {

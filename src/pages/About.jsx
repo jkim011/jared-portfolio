@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import PageAnimation from "../components/PageAnimation";
 
 import portfolioPic from '../assets/portfolioPic.jpg'
-import resumePdf from '../assets/jareds-coding-resume.pdf'
+import resumePdf from '../assets/jareds_fullstack_resume.pdf'
 
 function About() {
   return (
@@ -21,7 +21,7 @@ function About() {
         <div className="about-me">
           <p>
             Based in Lago Vista, TX. I got into web development because it's a way for me to exercise my creativity and problem solving abilities. I build new web applications that solve real world problems, and debug to bring out the best in every app. Prior to web development, I taught martial arts for 4 years, so I have great soft skills such as attention to detail, organization, time efficiency, and teamwork. Training martial arts is still a hobby of mine since it keeps me disciplined and focused, and I also enjoy playing video games. <br/><br/>
-            <a href={resumePdf} download="jareds-coding-resume.pdf" className="textDecNone"><span className="resume-link"><h5>Download my resume</h5></span></a>      
+            <a href={resumePdf} download="jareds_fullstack_resume.pdf" className="textDecNone"><span className="resume-link"><h5>Download my resume</h5></span></a>      
           </p>
         </div>
       </div>
